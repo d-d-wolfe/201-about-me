@@ -47,10 +47,14 @@ img {
 }
 
 p {
-  border: solid 2px black;
-  margin-top: 15px;
+  
+  border: solid 2px blueviolet;
+  margin-top: 15px; 
   border-radius: 5px;
   display: flex;
   flex-direction: row;
-  box-shadow: 5px 10px ; color: rgb(156, 149, 202);
+  box-shadow: 5px 10px blueviolet;
+  
+
+  
 }
