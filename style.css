@@ -52,5 +52,5 @@ p {
   border-radius: 5px;
   display: flex;
   flex-direction: row;
-  box-shadow: 5px 10px ; color: darkslateblue;
+  box-shadow: 5px 10px ; color: rgb(156, 149, 202);
 }
