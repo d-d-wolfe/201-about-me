@@ -1,0 +1,56 @@
+nav {
+  background-color: lightgray;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+li {
+   color: rgb(178, 236, 17);
+   
+}
+
+.navBar a {
+  font-family: fantasy;
+  font-size: large;
+  font-weight: 200;
+  color: blueviolet;
+}
+
+a:hover {
+  color: orange;
+  cursor: pointer;
+}
+
+h1 {
+  font-family: sans-serif;
+  color: blue;
+
+}
+
+h2 {
+  font-family: Georgia;
+  color: red;
+}
+ 
+
+a {
+  font-family: cursive;
+  font-size: medium;
+  font-weight: 150;
+  color: darkgreen;
+}
+
+img {
+  border-radius: 20px;
+}
+
+p {
+  border: solid 2px black;
+  margin-top: 15px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 5px 10px ; color: darkslateblue;
+}
