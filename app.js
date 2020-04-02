@@ -48,6 +48,7 @@ if(jsDeveloper === 'Y') {
 //  console.log('Actually, ' + userName + ' , Daves goal is to become a JavaScript Developer.');
   alert('Actually, ' + userName + ' , Daves goal is to become a JavaScript Developer.');
 }
+
 //Guessing game. Ask user to guess number between 1-100. If answer is too high, say so and prompt to try again. If answer is too low, say so and prompt to try again. Max of 5 tries.
 var numberAnswer = Math.floor(Math.random() * 100);
 console.log('Number is ' + numberAnswer);
