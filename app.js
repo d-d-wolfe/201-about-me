@@ -24,7 +24,6 @@ function college() {
   }
 }
 
-
 function industry() {
   var workedIndustry = prompt('Has Dave worked in the tech industry ' + userName +'?' + ' Y or N').toUpperCase();
   if(workedIndustry === 'Y') {
