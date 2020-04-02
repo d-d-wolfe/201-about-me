@@ -4,7 +4,7 @@
 // -wrap variables and loops
 // execute function
 
-  var userName = prompt('What is your name?');
+var userName = prompt('What is your name?');
   //console.log(userName)
     alert('Welcome to my page ' + userName + '!');
 
@@ -97,8 +97,8 @@ function petGame() {
   var myPets = ['dog', 'cat', 'snake', 'mouse', 'fish', 'hamster'];
 
   var guessPets = prompt('I\'ve had a number of pets throughout my life. Can you guess what one of them was?').toLowerCase();
-
-  for (i = 0; i < 5; i++){
+  var petIndex = 0
+  for (petIndex = 0; petIndex < 5; petIndex++){
     if (guessPets === myPets[0] || guessPets === myPets[1] || guessPets === myPets[2] || guessPets === myPets[3] || guessPets === myPets[4] || guessPets === myPets[5]){
       alert('Yes! I had a ' + guessPets + '.')
         //console.log('Yes! I had a ' + guessPets + '.')
@@ -108,19 +108,21 @@ function petGame() {
       guessPets = prompt('Nope! I never had a ' + guessPets + '.' + 'Why don\'t you try again?');
     } 
   }
+  alert('The pets I\'ve had are ' + myPets);
 }
-  alert('The pets I\'ve had are ' + myPets)
-
-  alert('Thank you ' + userName + ', you got ' + correctAnswers + 'out of ' + Questions + '!')
-
-
-
+  
 college();
 industry();
 enjoy();
 develop();
 numberGame();
 petGame();
+
+
+alert('Thank you ' + userName + ', you got ' + correctAnswers + 'out of ' + Questions + '!');
+
+
+
 
 
 
