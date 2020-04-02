@@ -1,23 +1,31 @@
 'use strict';
 
+// wrap logic in function
+// -wrap variables and loops
+// execute function
+
+
 var userName = prompt('What is your name?');
 //console.log(userName)
-  alert('Welcome to my page ' + userName + '!')
+  alert('Welcome to my page ' + userName + '!');
+
 
 var Questions = 7;
 var correctAnswers = 0;
 var numberOfGuesses = 0;
 
-var wentToCollege = prompt('Has Dave gone to college ' + userName +'?' + ' Y or N').toUpperCase();
-if(wentToCollege === 'Y' ) {
-// console.log('Yes, ' + userName + ' , Dave did go to college.');
-  alert('Yes, ' + userName + ' , Dave did go to college.');
-  correctAnswers++
-} else {
- // console.log('Actually ' + userName + ' Dave did go to college.');
-  alert('Actually ' + userName + ' Dave did go to college.');
+function college() {
+  var wentToCollege = prompt('Has Dave gone to college ' + userName +'?' + ' Y or N').toUpperCase();
+  if(wentToCollege === 'Y' ) {
+  // console.log('Yes, ' + userName + ' , Dave did go to college.');
+    alert('Yes, ' + userName + ' , Dave did go to college.');
+    correctAnswers++
+  } else {
+  // console.log('Actually ' + userName + ' Dave did go to college.');
+    alert('Actually ' + userName + ' Dave did go to college.');
+  }
 }
-
+college();
 
 var workedIndustry = prompt('Has Dave worked in the tech industry ' + userName +'?' + ' Y or N').toUpperCase();
 if(workedIndustry === 'Y') {
@@ -98,7 +106,6 @@ alert('The pets I\'ve had are ' + myPets)
 
 alert('Thank you ' + userName + ', you got ' + correctAnswers + 'out of ' + Questions + '!')
 
-
-
+// college();
 
 
