@@ -39,3 +39,48 @@ if(jsDeveloper === 'Y') {
 //  console.log('Actually, ' + userName + ' , Daves goal is to become a JavaScript Developer.');
   alert('Actually, ' + userName + ' , Daves goal is to become a JavaScript Developer.');
 }
+//Guessing game. Ask user to guess number between 1-100. If answer is too high, say so and prompt to try again. If answer is too low, say so and prompt to try again. Max of 5 tries.
+var numberAnswer = Math.floor(Math.random() * 100);
+console.log('Number is ' + numberAnswer);
+var guessNumber = prompt('Please guess a number between 1 and 100.');
+
+var i = 0
+var gotIt
+var tooHighLow
+
+while (i < 4){
+  guessNumber = Number(guessNumber);
+  if (guessNumber === numberAnswer){
+    gotIt = true
+  } else if (guessNumber > numberAnswer){
+    tooHighLow = 'too high';
+  } else if (guessNumber < numberAnswer){
+    tooHighLow = "too low";
+  }
+
+  if(gotIt){
+    alert('Awesome ' + userName + '!! ' + numberAnswer + ' is correct.');
+    i = 4;
+  } else if (i < 3){
+    guessNumber = prompt('I\'m sorry you\'ve guessed a number that is ' + tooHighLow + ' , Please try again.');
+  } else {
+    alert('Awww! You didn\'t guess it. I was thinking of ' + numberAnswer + '!')
+  }
+  i++
+}
+
+var myPets = ['dog', 'cat', 'snake', 'mouse', 'fish', 'hamster'];
+
+var guessPets = prompt('I\'ve had a number of pets throughout my life. Can you guess what one of them was?').toLowerCase();
+
+for (i = 0; i < 5; i++){
+  if (guessPets === myPets[0] || guessPets === myPets[1] || guessPets === myPets[2] || guessPets === myPets[3] || guessPets === myPets[4] || guessPets === myPets[5]){
+    alert('Yes! I had a ' + guessPets + '.')
+      //console.log('Yes! I had a ' + guessPets + '.')
+      break;
+  } else {
+    guessPets = prompt('Nope! I never had a ' + guessPets + '.' + 'Why don\'t you try again?');
+    
+  } 
+}
+
