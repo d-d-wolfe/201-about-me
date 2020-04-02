@@ -97,10 +97,7 @@ for (i = 0; i < 5; i++){
 alert('The pets I\'ve had are ' + myPets)
 
 alert('Thank you ' + userName + ', you got ' + correctAnswers + 'out of ' + Questions + '!')
-//create variable to hold the score [x] line 16
-//keep track of correct answers []
-//calculate total []
-//send an alert telling user how many correct answers []
+
 
 
 

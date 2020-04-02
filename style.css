@@ -1,6 +1,3 @@
-nav {
-  background-color: lightgray;
-}
 
 ul {
   list-style-type: disc;
@@ -11,14 +8,15 @@ li {
    
 }
 
-.navBar a {
+.navBar {
   font-family: fantasy;
   font-size: large;
   font-weight: 200;
   color: blueviolet;
+  background-color: lightgray;
 }
 
-a:hover {
+.navBar a:hover {
   color: orange;
   cursor: pointer;
 }
@@ -35,7 +33,7 @@ h2 {
 }
  
 
-a {
+.listItems li {
   font-family: cursive;
   font-size: medium;
   font-weight: 150;
