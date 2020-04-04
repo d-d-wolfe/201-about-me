@@ -1,11 +1,9 @@
 'use strict';
 
-// wrap logic in function
-// -wrap variables and loops
-// execute function
+
 
 var userName = prompt('What is your name?');
-  //console.log(userName)
+ 
     alert('Welcome to my page ' + userName + '!');
 
 var Questions = 7;
@@ -15,11 +13,10 @@ var numberOfGuesses = 0;
 function college() {
   var wentToCollege = prompt('Has Dave gone to college ' + userName +'?' + ' Y or N').toUpperCase();
   if(wentToCollege === 'Y' ) {
-    // console.log('Yes, ' + userName + ' , Dave did go to college.');
     alert('Yes, ' + userName + ' , Dave did go to college.');
     correctAnswers++
   } else {
-    // console.log('Actually ' + userName + ' Dave did go to college.');
+    
     alert('Actually ' + userName + ' Dave did go to college.');
   }
 }
@@ -27,11 +24,10 @@ function college() {
 function industry() {
   var workedIndustry = prompt('Has Dave worked in the tech industry ' + userName +'?' + ' Y or N').toUpperCase();
   if(workedIndustry === 'Y') {
-    // console.log('Yes, ' + userName + ' , Dave has worked in the industry.');
     alert('Yes, ' + userName + ' , Dave has worked in the industry.');
     correctAnswers++
   } else {
-    // console.log('Actually, ' + userName + ' , Dave has worked in the tech industry.');
+    sole.log('Actually, ' + userName + ' , Dave has worked in the tech industry.');
     alert('Actually, ' + userName + ' , Dave has worked in the tech industry.');
   }
 }
@@ -39,28 +35,23 @@ function industry() {
 function enjoy() {
   var enjoyCodeFellows = prompt('Is Dave enjoying Code Fellows ' + userName +'?' + ' Y or N').toUpperCase();
   if(enjoyCodeFellows === 'Y') {
-  //  console.log('Yes, ' + userName + ' , Dave is enjoying Code Fellows.');
-    alert('Yes, ' + userName + ' ,  Dave is enjoying Code Fellows.');
+      alert('Yes, ' + userName + ' ,  Dave is enjoying Code Fellows.');
     correctAnswers++
   } else {
-  //  console.log('Actually, ' + userName + ' , Dave is enjoying Code fellows.');
-    alert('Actually, ' + userName + ' , Dave is enjoying Code fellows.');
+      alert('Actually, ' + userName + ' , Dave is enjoying Code fellows.');
   }
 }
 
 function develop() {
   var jsDeveloper = prompt('Is Daves goal to become a JavaScript Developer, ' + userName +'?' + ' Y or N').toUpperCase();
   if(jsDeveloper === 'Y') {
-  //  console.log('Yes ' + userName + ' , Daves goal is to become a JavaScript Developer.');
-    alert('Yes ' + userName + ' , Daves goal is to become a JavaScript Developer.');
+      alert('Yes ' + userName + ' , Daves goal is to become a JavaScript Developer.');
     correctAnswers++
   } else {
-  //  console.log('Actually, ' + userName + ' , Daves goal is to become a JavaScript Developer.');
-    alert('Actually, ' + userName + ' , Daves goal is to become a JavaScript Developer.');
+      alert('Actually, ' + userName + ' , Daves goal is to become a JavaScript Developer.');
   }
 }
 
-//Guessing game. Ask user to guess number between 1-100. If answer is too high, say so and prompt to try again. If answer is too low, say so and prompt to try again. Max of 5 tries.
 function numberGame() {
   var numberAnswer = Math.floor(Math.random() * 100);
   console.log('Number is ' + numberAnswer);
@@ -101,9 +92,8 @@ function petGame() {
   for (petIndex = 0; petIndex < 5; petIndex++){
     if (guessPets === myPets[0] || guessPets === myPets[1] || guessPets === myPets[2] || guessPets === myPets[3] || guessPets === myPets[4] || guessPets === myPets[5]){
       alert('Yes! I had a ' + guessPets + '.')
-        //console.log('Yes! I had a ' + guessPets + '.')
-        correctAnswers++
-        break;
+      correctAnswers++
+      break;
     } else {
       guessPets = prompt('Nope! I never had a ' + guessPets + '.' + 'Why don\'t you try again?');
     } 
