@@ -57,6 +57,7 @@ h2 {
   font-size: medium;
   font-weight: 150;
   color: darkgreen;
+  margin: auto;
 }
 
 #goal{
@@ -74,10 +75,13 @@ p {
   flex-direction: row;
   box-shadow: 5px 10px blueviolet;
   
+  
 }
 
 Footer {
   text-align: center;
   margin: auto;
   width: 50%;
+  
+  
 }
