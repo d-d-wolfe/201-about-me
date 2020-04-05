@@ -78,6 +78,12 @@ p {
   
 }
 
+#foot {
+  text-align: center;
+  margin: auto;
+  width: 50%; 
+}
+
 Footer {
   text-align: center;
   margin: auto;
